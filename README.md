@@ -17,3 +17,17 @@
 - [Virtual inheritance](http://www.cprogramming.com/tutorial/virtual_inheritance.html)
 - [Casting objekata i varijabli](http://www.cplusplus.com/doc/tutorial/typecasting/)
 - [Pointer to member](http://stackoverflow.com/questions/670734/c-pointer-to-class-data-member)
+
+
+#### Softverski zahtjevi ####
+
+- Microsoft Windows 8.1
+
+- DirectX 11.2 (Shiped as a part of the Windows SDK)
+  - See: http://msdn.microsoft.com/en-us/library/windows/apps/dn481536.aspx
+
+- Visual Studio 2013 (C++)
+  - See: http://msdn.microsoft.com/en-us/library/jj620919.aspx
+
+- Visual Studio CTP Nov 2013 
+  - Download: http://www.microsoft.com/en-us/download/details.aspx?id=41151
