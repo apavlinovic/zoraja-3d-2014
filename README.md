@@ -31,3 +31,6 @@
 
 - Visual Studio CTP Nov 2013 
   - Download: http://www.microsoft.com/en-us/download/details.aspx?id=41151
+
+
+![Ivan Zoraja](http://www.slobodnadalmacija.hr/Portals/0/images/2008-04-14/Split/IVAN_ZORAJA1-310308.1Thumbnail.jpg)
