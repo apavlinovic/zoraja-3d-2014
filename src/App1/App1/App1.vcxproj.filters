@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>c38fdb54-c5e7-4dda-ada7-8c9205adb5d4</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>e1f2804b-4089-4904-87e0-6b41fbf7257c</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <ClInclude Include="Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClCompile Include="Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClInclude Include="Content\Sample3DSceneRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\SampleFpsTextRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\ShaderStructures.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClCompile Include="Content\Sample3DSceneRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SampleFpsTextRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <FxCompile Include="Content\SamplePixelShader.hlsl">
+      <Filter>Content</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\SampleVertexShader.hlsl">
+      <Filter>Content</Filter>
+    </FxCompile>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="Components">
+      <UniqueIdentifier>{abe84141-98f4-420a-a940-0f39e079b3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>afb63aab-49fb-47aa-b946-76bfc9812ed5</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="App1Main.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Components\ShaderStructures.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="App1Main.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Components\ShaderBase.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\VertexShader.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\PixelShader.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\BufferBase.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\ConstantBuffer.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\VertexBuffer.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\IndexBuffer.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\MeshBase.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Cubes.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Actor.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\CameraBaseRH.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\FixedCameraRH.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App1_TemporaryKey.pfx" />
+  </ItemGroup>
+</Project>

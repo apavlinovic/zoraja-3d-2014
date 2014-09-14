@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="c712b2c5-a1a5-4cf7-81a1-84755e753982" name="Pipeline" linkedPackageId="ebdab070-1d62-45ad-94c7-52db0b7a59c4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3de8a447-ccdb-4f9f-af37-12d8f29dd871" name="DeviceResources" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="839eff96-232f-4983-adf2-ed231203f842" />
+        <targetEnds>
+          <association Id="11dd46b4-2a96-4f60-a082-1aaebbefe9de" isDerived="false" sourceEndRoleName="" targetEndRoleName="m_d3dDevice" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="023cd781-f430-495d-a770-4563103a519e" LastKnownName="ID3D11Device2" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="21385ac2-c2f9-4ce4-bc71-e2b5fc160a94" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="bf75e56b-85ae-48a2-810a-96a1762a8d10" name="Lower">
+                      <elementDefinition Id="063939ef-d0c3-4036-9149-4b773ee07fc8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d6c9952f-ebae-4189-a0a2-d64771e5c4b7" name="Upper">
+                      <elementDefinition Id="4d38aa58-9ed5-4540-959f-ff807151c4e9" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="365b4fbd-1ce3-4492-aeac-08350022f3c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30345b1f-7ed2-46ec-b704-34a72874b768" name="m_d3dDevice" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="297de70a-a026-4386-8cd9-8965048e4769" name="Lower">
+                      <elementDefinition Id="a4402796-1b36-4677-a14b-13ca5f28a69a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="641c201b-8375-4567-a013-34f16995793d" name="Upper">
+                      <elementDefinition Id="9a6f5dd8-eb47-48dc-9723-f6fc76a48fbf" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="95aa882c-2c29-48ea-a8ab-164f21467d2a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="27768c2a-e72f-49ae-8e21-f3dfaefbd522" />
+          </association>
+          <association Id="354bbbf5-9e97-4b5e-94a1-9648c515c0c6" isDerived="false" sourceEndRoleName="" targetEndRoleName="m_d3dContext" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="4269f6c0-6f44-453f-8208-6f0f5ba4ab18" LastKnownName="ID3D11DeviceContext2" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1aed7afd-59a2-4e6d-ab68-b96220f398c7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="d362edb6-df6a-49d8-a0fa-a18e6790ceaa" name="Lower">
+                      <elementDefinition Id="bbb13873-be87-44b4-a5a1-eeb2cb77a6b9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="573e55b7-87a1-4890-b14a-549be6d217dd" name="Upper">
+                      <elementDefinition Id="cab14630-6b15-4185-834e-2d4e2ef0c1d2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f30ae70a-7c6c-4b89-bd78-7fb3e323a290" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc676656-7674-46cf-b05a-e59b05d8a405" name="m_d3dContext" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="64cd9aad-ee0a-49c6-a373-3577b138f825" name="Lower">
+                      <elementDefinition Id="3e5055e7-50ac-46d5-ac0d-af4383531373" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="fd48fa6e-8ece-4587-9ce9-e9465c655487" name="Upper">
+                      <elementDefinition Id="3f0dc506-9caf-4bc0-b899-c815fa4f5a0f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="508b2885-ff3f-4903-9000-09ad5fefb933" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3d5b4bb4-5e3d-4df4-9cd9-21c099db73eb" />
+          </association>
+          <association Id="8b809de3-9a58-4db2-a9ac-f7d713edfd28" isDerived="false" sourceEndRoleName=" " targetEndRoleName="m_swapChain" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="fdf1f1a3-93f8-4815-8737-1f234aa97685" LastKnownName="IDXGISwapChain1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="54ff2cb1-b41b-437e-9c5c-411f66cae440" name=" " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="a80e3b6e-f059-4409-a6cf-657c1a17c321" name="Lower">
+                      <elementDefinition Id="c124ecdf-d044-4bfa-ab53-9eef828880e8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3b57e8ec-b531-411e-8513-097e5f61c2f9" name="Upper">
+                      <elementDefinition Id="d2bd4190-8dcb-436d-b5a8-07ae38b4373f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0511f8d3-37d2-4200-b360-803f2b47f2f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="82ae40b1-0bed-49b5-a1c0-83d3b087b9c8" name="m_swapChain" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="756228be-e5d9-4e4c-b35c-5f94bbc1467f" name="Lower">
+                      <elementDefinition Id="1ff985bf-d0a0-4ffd-b9e1-7a6cc8785cfa" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f93fd651-bff8-44ac-9a2b-a3aa8c729ba1" name="Upper">
+                      <elementDefinition Id="db9fe01e-0e25-4371-9680-696bf267b13e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ff351fd4-01e5-47b3-b259-bc113c184833" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="677f7bda-11af-4dcd-a617-34cfc8095865" />
+          </association>
+          <association Id="28276521-cbfd-4444-b47e-de1009caf193" isDerived="false" sourceEndRoleName=" " targetEndRoleName="m_d3dRenderTargetView" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="3a77f2de-d665-4b84-bc8b-3eb7976916ce" LastKnownName="ID3D11RenderTargetView" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="640fc75d-5497-43ad-9bc1-2473bc54bdd4" name=" " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="62b48668-a5f6-4d98-86ef-701605b1fdef" name="Lower">
+                      <elementDefinition Id="b3c54601-debd-4a6c-b85a-544d8dc82918" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="62a511e5-b29e-4368-bfa2-36d078cac454" name="Upper">
+                      <elementDefinition Id="e0c245be-8484-41d7-93ef-ea1c47f25c77" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8c06e9d3-8366-4647-95d5-3c3f3266da97" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1d5eb23-b7ca-494a-ba16-e46f52354092" name="m_d3dRenderTargetView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="98ca26f8-b52f-42d2-b88a-8206d9d51a39" name="Lower">
+                      <elementDefinition Id="8592ce01-dcf1-4562-9ecd-9b81bde3e5b1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a9e951e2-62d7-4154-84de-849ea6c125f2" name="Upper">
+                      <elementDefinition Id="fbf1c17a-347f-42d8-ac17-ce3332cbf4f8" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b9ff78f0-d309-464c-9513-32c69ad20763" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="28987484-b6b6-4296-887d-593daecc8f25" />
+          </association>
+          <association Id="4958cf59-7f2b-44b8-a695-ab902dc2ee39" isDerived="false" sourceEndRoleName=" " targetEndRoleName="m_d3dDepthStencilView" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="a0f4818d-a88f-4faa-9ebc-16d203513523" LastKnownName="ID3D11DepthStencilView" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="961bd544-49a5-41b1-a787-30f21bf2dd89" name=" " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="b6b0c4f8-8f69-4726-ad58-a2e161e08463" name="Lower">
+                      <elementDefinition Id="2d3c043f-fbdb-4fbd-a0f4-c7ca3aa726fe" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4993eaa1-a491-48f8-be53-d5d89a8066bc" name="Upper">
+                      <elementDefinition Id="dc2c2951-5107-4d24-af36-a3d5f4266bc9" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2faf3cbb-2240-4670-b0f4-0f2a139e6ac2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b48af3c-8a27-41ab-959b-d96085f67b12" name="m_d3dDepthStencilView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="aa759934-db9c-4aa8-a027-6b61b2f0189f" name="Lower">
+                      <elementDefinition Id="318cefca-8e4a-4986-95e3-e9e10cefbcbb" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="57d7271a-5517-4bfb-9f2e-016203bd4a9d" name="Upper">
+                      <elementDefinition Id="bc1cfff2-fce2-4c0f-95fa-3cb25eeb1648" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="31fac6f7-bea3-409b-8468-fddeb78bd73d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c6b332e7-08b1-4365-8348-b64face9a5a7" />
+          </association>
+          <association Id="c23614af-a967-4bc4-bc23-bb1a806058a7" isDerived="false" sourceEndRoleName=" " targetEndRoleName="m_screenViewport" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a11aea0c-a627-4c0b-869c-0b83337b8b2d" LastKnownName="D3D11_VIEWPORT" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a618de53-f18a-44bd-af62-480307c366ae" name=" " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="a11315ac-9b0b-4674-a8dc-8dbd6d9848fe" name="Lower">
+                      <elementDefinition Id="fadf5162-8b12-4722-abcf-63b5c0684dca" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="40b29a69-642f-40c7-8138-d9b1f84c1c94" name="Upper">
+                      <elementDefinition Id="657c9b3a-1223-4158-ab5c-64537fb41b79" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2bdbe0ee-0634-48e0-90a0-06e6e984c8a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8949bbee-2b8e-4a16-a657-17a68b34c00f" name="m_screenViewport" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="6297b84c-3390-44be-ba64-406be00b18b5" name="Lower">
+                      <elementDefinition Id="4ad1556a-0daf-43e3-8f10-d86665fbb580" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3e4b4c48-152e-4366-a379-c5e6f8a79ec6" name="Upper">
+                      <elementDefinition Id="ba8200a3-eec4-4526-a0de-57518bc5c0c5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="626e1182-2413-484d-9ef1-5d54f22e2208" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a732b306-9db6-4b76-a54c-b6c95b497c20" />
+          </association>
+          <association Id="8254d0e8-1a6a-4db2-a48a-dae37cac1eee" isDerived="false" sourceEndRoleName="" targetEndRoleName="m_deviceNotify" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="6e48e101-067e-454d-bf7e-464fd201c580" LastKnownName="IDeviceNotify" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8312e74e-119e-4139-9e38-f26e5c744c9f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="c75e06f8-194b-4fab-ae1f-3b1a452869ba" name="Lower">
+                      <elementDefinition Id="28ec174d-cc48-47e5-953f-34d0f3ec9452" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="37e4f983-8c0e-4827-af9f-a15577141745" name="Upper">
+                      <elementDefinition Id="ed1b2224-54b1-4e85-8534-5a8a45f53235" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="64d727b8-fd4d-4d37-9675-a85fda2f784c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8e2c331-c39f-4011-86af-1576273bc12f" name="m_deviceNotify" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c11e1b07-c913-44fe-9766-7fe58ba2f0a1" name="Lower">
+                      <elementDefinition Id="7ed805d9-dc61-4b83-af2a-10f908f12121" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d7e068ed-c65c-4203-bbf9-e2ae1b47a975" name="Upper">
+                      <elementDefinition Id="9527072a-49b4-4f8e-9248-616861da2de5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="09aa8143-a3e7-4549-bee3-2a484f14800b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d6ef679e-ecd7-44c9-aebd-e9583ce403ba" />
+          </association>
+          <association Id="44bac9d9-063e-4499-a0c6-4391c86c1ee8" isDerived="false" sourceEndRoleName=" " targetEndRoleName="m_window" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7b37a4f1-6ccd-43c6-9ea1-9e147abfcb47" LastKnownName="CoreWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c3510d1-6b49-4862-b9ed-040539df430c" name=" " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="53bdbe55-dd31-4638-9514-d35f324e0185" name="Lower">
+                      <elementDefinition Id="13057979-a0ea-4f1b-bc2c-d669da59f34d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="92c9c442-b2c6-4c91-88b3-970e598527d8" name="Upper">
+                      <elementDefinition Id="aaec6343-8f5f-47b2-a5bb-19ac63d37a41" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="11c02d20-5f96-4e5f-9354-e7f147b42b74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="acf28d83-2b9b-4b3b-b57b-6818e2ab28a3" name="m_window" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="9002a951-1063-4784-8158-9263021f6e65" name="Lower">
+                      <elementDefinition Id="164aac64-2413-4902-865d-547cb12be629" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8e39b91a-0ca5-4629-ab6e-c50ed5b02d61" name="Upper">
+                      <elementDefinition Id="789e8dc1-bf23-4b91-8761-8411365f6ecc" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="11014c23-3b07-45d6-9661-7e18f0084405" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="865792f1-555a-409c-bed3-6b945453102c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d6e701d1-460c-4cde-8b65-6f25c53b055b" name="D3D_FEATURE_LEVEL m_d3dFeatureLevel" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7cde09bb-2329-4572-9fa1-f38784875fb9" />
+          </property>
+          <property Id="ce77d196-ff97-41ac-a051-cc081534fcf8" name="Size m_d3dRenderTargetSize" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7e591e70-3bc7-4ce5-913f-b24b4b5038a6" />
+          </property>
+          <property Id="980dff8f-e059-45c0-88b2-c5c54bc88059" name="Size m_logicalSize" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="375854ce-46af-4b45-ac82-c07b521443c0" />
+          </property>
+          <property Id="8658aaf9-6b5f-4be6-ab2a-e7a25166c98e" name="Size m_outputSize" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b02d6935-3482-4e2f-b123-7cb9908f3733" />
+          </property>
+          <property Id="1190a291-7da8-45d2-8afc-0c4afe83e441" name="DisplayOrientations m_nativeOrientation" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5985b0b3-7417-4c8d-90d6-7fd88b29a053" />
+          </property>
+          <property Id="2e9b2003-2fe0-4499-968d-1f2640e78cab" name="DisplayOrientations m_currentOrientation" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e7a83878-f855-4b24-96c9-5d13ba15323f" />
+          </property>
+          <property Id="57330161-3bbe-4511-b944-9eb5b1ccb4a3" name="float m_dpi" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a75ca55d-d7a4-456c-926c-7dd15fef1667" />
+          </property>
+          <property Id="f6e0b092-a3fc-4a9e-8776-1157eed73423" name="XMFLOAT4X4 m_orientationTransform3D" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e0c6a2b7-0596-471c-b3e0-d03de54ab25e" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7c45911a-9b48-423e-a8df-896221aa7c4a" name="RegisterDeviceNotify" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f2d3a0fe-70be-4d9d-94d4-c3b9c367c573" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="acba3b73-98e9-4f1b-ae76-7a19e120bcca" name="IDeviceNotify*" direction="In" isUnique="false">
+                  <elementDefinition Id="40f6736c-f920-4d6a-930b-4ecd16b3d884" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="52c9665d-f77b-435b-a058-aaf7d251fb8d" name="ValidateDevice" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e5e0b257-f266-4267-88ad-bfeb423b81fc" />
+          </operation>
+          <operation Id="af98c7ee-e3c0-428c-b338-38981e619aaa" name="HandleDeviceLost" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c44fc1d0-932d-486d-ad23-2203a805f5bd" />
+          </operation>
+          <operation Id="aceec19b-22f8-4226-8d5c-6a595ff69b5d" name="Present" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="53dec57e-a00e-45f2-bbc4-1554bc181b60" />
+          </operation>
+          <operation Id="d22a9331-3f7c-4266-8994-adefd2689d44" name="Trim" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0ae1bccf-e57e-4b22-ae93-8af0f7976ff4" />
+          </operation>
+          <operation Id="a7e05d14-dafd-4505-bb1d-1d8ced05b272" name="CreateDeviceResources" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="794d4369-f4ac-47c1-8599-e252b18ff04d" />
+          </operation>
+          <operation Id="9b10a877-1aa7-4d22-9d88-40f8484a7283" name="CreateWindowSizeDependentResources" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5fc6e3b2-6a7d-4529-a146-ddb1ac34141b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="023cd781-f430-495d-a770-4563103a519e" name="ID3D11Device2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a08c542e-c1e2-40d8-a48b-e57e46a8c8b2" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="4269f6c0-6f44-453f-8208-6f0f5ba4ab18" name="ID3D11DeviceContext2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="194479c4-af0d-4952-bb52-6b458994760f" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="fdf1f1a3-93f8-4815-8737-1f234aa97685" name="IDXGISwapChain1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4c513b30-3a51-4a9d-a715-ae274336aabe" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3a77f2de-d665-4b84-bc8b-3eb7976916ce" name="ID3D11RenderTargetView" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c49f4dbd-da14-496e-a253-ad8ac6b689e7" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="a0f4818d-a88f-4faa-9ebc-16d203513523" name="ID3D11DepthStencilView" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f967714-6317-480a-8ebb-6e9f6cacb95a" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a11aea0c-a627-4c0b-869c-0b83337b8b2d" name="D3D11_VIEWPORT" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4886acbf-4aff-4a0a-805e-ad2598ae43e0" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="6e48e101-067e-454d-bf7e-464fd201c580" name="IDeviceNotify" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f95d1692-baba-4896-a1c0-8453349fbb1a" />
+        <ownedOperations>
+          <operation Id="5a6b5f1d-6332-4891-b7f2-3de71f43fa99" name="OnDeviceLost" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7bd23778-ebbf-4857-a4c0-4f99a8a4bc2f" />
+          </operation>
+          <operation Id="ea0db5fa-5733-463e-8d97-b8dd7bc002a2" name="OnDeviceRestored" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fdfb9174-ebf0-4129-a5d5-2c5dde7c37cc" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7b37a4f1-6ccd-43c6-9ea1-9e147abfcb47" name="CoreWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="31f3f284-f725-4044-8c24-922bde0aa99d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="ebdab070-1d62-45ad-94c7-52db0b7a59c4" name="ModelingProject1">
+    <elementDefinition Id="896289b8-b29b-49b8-b5b2-94b1637566ac" />
+    <profileInstances>
+      <packageHasProfileInstances Id="365a13d0-00c3-4123-b9a8-1c4545437801">
+        <profileInstance Id="f4f9d8aa-a575-40fb-8937-621b447ba09f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f1279c41-0417-4702-b1ed-3bcfe76cc01d">
+        <profileInstance Id="2206b3c5-6565-4dbc-b4b1-e026fa43e135" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

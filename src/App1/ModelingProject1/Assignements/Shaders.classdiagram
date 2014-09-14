@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="ab160d0b-a42f-4c92-a263-6e631ca54703" name="Shaders" linkedPackageId="6035429b-8a91-4a13-bb46-dc3360ee02c3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="40351748-7b5d-415a-804c-57df3f823a9b" name="ShaderBase" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="013aa0dd-8a4f-433d-8af0-fda026886115" />
+        <ownedOperationsInternal>
+          <operation Id="d7866203-f287-4b89-a158-17c35162d17b" name="CreateAsync" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cce98a95-b94b-4e33-b805-8a3eed8aea9c" />
+          </operation>
+          <operation Id="7253fc4d-fc8b-4be7-a5ce-c0d6a8a827aa" name="Bind" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="09b7a9af-7486-4cee-893f-ce3cfd1b6125" />
+          </operation>
+          <operation Id="251791a4-8fcb-46da-aee2-312591a2e424" name="Reset" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="852bab56-373c-4a9f-a1ff-875925a85375" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6384aecc-d627-47c2-a3ba-0814e304a9f9" name="VertexShader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8cc95eb7-b12c-4540-93fc-0eecb01866de" />
+        <generalsInternal>
+          <generalization Id="026ea140-7a07-4f70-bc5e-06792480c74a" isSubstitutable="false">
+            <classMoniker Id="40351748-7b5d-415a-804c-57df3f823a9b" LastKnownName="ShaderBase" />
+            <elementDefinition Id="e52ebd03-ff4f-466a-82f6-74ccb66b161f" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="7b21b1f0-7fd7-4d19-adce-296c968b8394" isDerived="false" sourceEndRoleName="" targetEndRoleName="_shader" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="d1cbd3e1-3a6b-44c5-867d-604006c28798" LastKnownName="ID3D11VertexShader" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc5e0dfa-34a9-479b-9404-d3448ff99892" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="f2fd041b-c926-4b4c-a198-797fee01eb9b" name="Lower">
+                      <elementDefinition Id="eb219cf0-0027-4d67-8c01-32ebeed3f7df" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="21f2df38-b071-4e0b-adbe-0efb3385660e" name="Upper">
+                      <elementDefinition Id="7195cb24-3d28-4995-96ca-416b3e93fee3" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="32f58d5b-33d5-471f-9a17-218195477ea4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8cc990e7-756c-49ee-adc5-2bb4fdcf647a" name="_shader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ec99a91a-0909-4241-99b0-dc587b973083" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e7081c5a-7a96-4fc1-9f2d-91214ba471cb" />
+          </association>
+          <association Id="dfa42dc7-1230-4e32-a977-d59b400eb482" isDerived="false" sourceEndRoleName=" " targetEndRoleName="_layout" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="e6f7667e-0dc2-4b10-b055-578c324b4d9c" LastKnownName="ID3D11InputLayout" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0fbc14a8-927d-49d9-9895-5a0ba4edeb8a" name=" " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="ce751b25-cc8c-4ca0-afb7-c1f6a17fff61" name="Lower">
+                      <elementDefinition Id="6dc280d0-da34-4b32-846c-ca5516087ff1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b02f4f62-cb6e-431e-96e9-b94a23d80fdf" name="Upper">
+                      <elementDefinition Id="7eaaf95b-ba9f-4110-83d5-b1347c99f191" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0cb61e51-3358-41cb-b5e2-7d1525c2a074" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03f08bc7-c6e6-488a-a75a-a85d828182fe" name="_layout" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f1a9c31-0ab7-44bb-91eb-b7af850c7839" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d28dcbd0-d24c-4abc-8725-b73df6e81680" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d1cbd3e1-3a6b-44c5-867d-604006c28798" name="ID3D11VertexShader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f73b03da-254c-4426-a645-f2d09e3c4412" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="e6f7667e-0dc2-4b10-b055-578c324b4d9c" name="ID3D11InputLayout" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="55f3e909-4004-41e3-8e88-bfd1e21f337d" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ad051682-4424-4d9b-a177-06c6f2352443" name="PixelShader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="128f3884-ecbb-4ee8-a476-193728e807ed" />
+        <generalsInternal>
+          <generalization Id="992b5291-b76f-4a4b-aa9c-a2cfb6f1d69a" isSubstitutable="false">
+            <classMoniker Id="40351748-7b5d-415a-804c-57df3f823a9b" LastKnownName="ShaderBase" />
+            <elementDefinition Id="f06c2ae3-f2ca-49c7-b46b-1c6f503c36b2" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="5afc9900-7552-4445-a60b-e7f95e99e0d8" isDerived="false" sourceEndRoleName=" " targetEndRoleName="_shader" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="b322c669-40f1-42de-8eb1-2d725e34387c" LastKnownName="ID3D11PixelShader" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1c9b1ee0-72ba-4e94-9a9a-aaba1178725d" name=" " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="af98d925-2b5f-480f-a630-1f1974edddb8" name="Lower">
+                      <elementDefinition Id="05bab3ce-68b2-4ac9-ac8b-adf1c6495021" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e246b4ea-6053-4f5e-8af7-4ded1afa4bae" name="Upper">
+                      <elementDefinition Id="76391273-388c-4460-af83-cadcc6dd2749" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="1bc35f5f-d790-440d-88d5-d867c1ba38ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7be8085-3bf7-4c78-9887-79394f1317b3" name="_shader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e96031cb-902d-4e02-811d-4b7f6be1069e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c748e09b-ced7-4fa2-b52d-210c4fc840ed" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="b322c669-40f1-42de-8eb1-2d725e34387c" name="ID3D11PixelShader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9b228e43-b17a-4ff7-97fe-867ff0dca389" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6035429b-8a91-4a13-bb46-dc3360ee02c3" name="ModelingProject1">
+    <elementDefinition Id="896289b8-b29b-49b8-b5b2-94b1637566ac" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6d266fd4-8232-4939-aa27-f0d4a0533234">
+        <profileInstance Id="743bbf86-f9d1-4e00-b5bd-5e4e54518a95" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6a08addb-e168-4071-903b-e945a0b425d0">
+        <profileInstance Id="0710698a-129a-4c2a-8ca2-443976a70fc3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
